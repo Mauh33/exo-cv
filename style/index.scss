@@ -202,6 +202,41 @@ footer {
 }
 
 
+/*
+  *
+      Big Tablet part
+  *
+*/
+
+@include from(md) {
+
+  .header-intro-bloc {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: $h1-size-tablet;
+  }
+
+  h2 {
+    font-size: $section-title-size-tablet;
+  }
+
+  .coordonnees {
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+      height: 70%;
+    }
+    p, a {
+      margin: 0 20px;
+      font-size: 16px;
+    }
+  }
+
+}
+
 
 /*
   *
@@ -209,3 +244,88 @@ footer {
   *
 */
 
+@include from(lg) {
+
+  // Header
+
+  header {
+    grid-column: 4/7;
+  }
+
+  .header-intro-bloc {
+    min-height: unset;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 60vh;
+  }
+
+  .img-bloc, .h1-bloc {
+    width: unset;
+    height: unset;
+    max-width: unset;
+    max-height: unset;
+  }
+
+  .img-profile {
+    width: 309px;
+    height: 391px;
+  }
+
+  .h1-bloc {
+    max-height: 250px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  // Main
+
+  main {
+    flex-direction: row;
+    grid-column: 4/7;
+    width: 100%;
+  }
+
+  .experiences, .A-propos {
+    height: 100vh;
+    margin-top: 60px;
+    justify-content: flex-start;
+    max-width: 1000px;
+    width: 50%;
+  }
+
+  .experiences {
+    padding: 0 0 117px;
+    width: 35%;
+  }
+
+  .experiences-bloc {
+    margin: 40px 0;
+  }
+
+  .competences-bloc {
+    display: flex;
+  }
+
+  .hard-skills {
+    width: 100%;
+  }
+
+  .skill {
+    font-size: 10px;
+  }
+
+  .A-propos {
+    width: 55%;
+  }
+
+  .A-propos h2 {
+    margin-bottom: 40px;
+  }
+
+  .a-propos-bloc {
+    margin-bottom: 20px;
+  }
+}
