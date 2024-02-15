@@ -1,0 +1,30 @@
+:root {
+  --bg-color: white;
+  --font-color: #202020;
+  --hard-skills-color: #E4DCDC;
+
+  --font-family: 'Work Sans';
+}
+
+$ft-small-desktop: 24px;
+$ft-medium-desktop: 36px;
+$ft-large-desktop: 64px;
+
+$section-title-size-mobile: 30px;
+$section-title-size-desktop: 144px;
+$h1-size-mobile: 40px;
+$h1-size-desktop: 248px;
+
+$max-xs: 426px;
+$max-sm: 767px;
+$max-md: 1024px;
+$max-lg: 1240px;
+$max-xl: false;
+
+$breakpoints: (
+  xs: $max-xs,
+  sm: $max-sm,
+  md: $max-md,
+  lg: $max-lg,
+  xl: $max-xl,
+);
