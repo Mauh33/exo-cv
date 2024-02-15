@@ -1,0 +1,155 @@
+@import "./variables";
+@import "./placeholders";
+@import "./mixins";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  @include grid(
+    $rows: repeat(auto-fill, 10vh),
+    $columns: repeat(9, auto),
+    $row-gap: 20px,
+    $column-gap: 10px
+  );
+}
+
+h1 {
+  font-size: $h1-size-mobile;
+  text-align: center;
+}
+
+h2 {
+  font-size: $section-title-size-mobile;
+}
+
+
+/*
+  *
+      Mobile part
+  *
+*/
+
+// Header
+
+header {
+  grid-column:  1/10;
+  grid-row: 1/6;
+}
+
+.header-intro-bloc {
+  position: relative;
+  @include flexbox(
+    $direction:column,
+    $justify: center,
+    $align: center,
+  )
+}
+
+.h1-bloc {
+  width: 100%;
+  height: 200px;
+  @include flexbox(
+    $direction: row,
+    $justify: center,
+    $align: center
+  )
+}
+
+.img-bloc {
+  display: none;
+}
+
+
+// Main
+
+main {
+  grid-column: 2/9;
+  grid-row: 6/11;
+  margin: auto;
+  @include flexbox(
+    $direction: column-reverse,
+    $justify: space-evenly,
+    $align: flex-start
+  )
+}
+
+section {
+  width: 80%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include flexbox(
+    $direction: column,
+    $justify: space-evenly,
+    $align: start,
+  )
+}
+
+.A-propos {
+  width: 80%;
+  height: 100vh;
+}
+
+.experiences {
+  height: 80vh;
+}
+
+
+// Footer
+
+footer {
+  grid-column: 1/10;
+  grid-row: 12/14;
+  position: sticky;
+}
+
+.coordonnees {
+  height: 150px;
+  width: 80%;
+  margin: auto;
+
+  ul {
+    height: 80%;
+    @include flexbox(
+      $direction: column,
+      $justify: space-evenly,
+      $align: center,
+    )
+  }
+}
+
+
+/*
+  *
+      Tablet part
+  *
+*/
+
+
+
+
+/*
+  *
+      Desktop part
+  *
+*/
+

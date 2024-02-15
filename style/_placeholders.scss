@@ -1,0 +1,21 @@
+
+%flex-child-small {
+  flex: 1;
+  width: 10vw;
+  height: 6vw;
+  margin: auto;
+}
+
+%flex-child-medium {
+  flex: 2;
+  width: 20vw;
+  height: 16vw;
+  margin: auto;
+}
+
+%flex-child-large {
+  flex: 3;
+  width: 30vw;
+  height: 25vw;
+  margin: auto;
+}
