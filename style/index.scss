@@ -255,15 +255,18 @@ footer {
   .header-intro-bloc {
     min-height: unset;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 60vh;
   }
 
   .img-bloc, .h1-bloc {
     width: unset;
-    height: unset;
     max-width: unset;
     max-height: unset;
+  }
+
+  .img-bloc {
+    height: unset;
   }
 
   .img-profile {
@@ -272,11 +275,13 @@ footer {
   }
 
   .h1-bloc {
-    max-height: 250px;
+    max-height: 300px;
     margin-bottom: 40px;
   }
 
   h1 {
+    display: block;
+    width: 300px;
     text-align: left;
   }
 
@@ -293,12 +298,13 @@ footer {
     margin-top: 60px;
     justify-content: flex-start;
     max-width: 1000px;
-    width: 50%;
+    width: 40%;
   }
 
   .experiences {
     padding: 0 0 117px;
-    width: 35%;
+    margin-left: 130px;
+    margin-right: unset;
   }
 
   .experiences-bloc {
@@ -315,10 +321,6 @@ footer {
 
   .skill {
     font-size: 10px;
-  }
-
-  .A-propos {
-    width: 55%;
   }
 
   .A-propos h2 {
