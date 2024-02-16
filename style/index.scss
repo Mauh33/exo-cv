@@ -34,11 +34,63 @@ body {
 h1 {
   font-size: $h1-size-mobile;
   text-align: center;
+  font-weight: 600;
 }
 
 h2 {
   font-size: $section-title-size-mobile;
+  font-weight: 100;
 }
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.date {
+  margin: 10px 0;
+}
+
+.experiences h2 {
+  margin-bottom: 40px;
+}
+
+.experiences-bloc {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.competences-bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.hard-skills {
+  height: 26px;
+  margin: 10px 10px 10px 0;
+  background-color: var(--secondary-color);
+  border-radius: 14px;
+  @include flexbox(
+    $direction: row,
+    $justify: center,
+    $align: center
+  );
+  width: fit-content;
+}
+
+.skill {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+
 
 
 /*
@@ -138,10 +190,10 @@ footer {
   }
 
   a, p {
-    color: var(--secondary-color);
+    color: var(--footer-ft-color);
+    font-weight: 600;
   }
 }
-
 
 /*
   *
@@ -250,13 +302,15 @@ footer {
 
   header {
     grid-column: 4/7;
+    margin-bottom: 40px;
   }
 
   .header-intro-bloc {
     min-height: unset;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 60vh;
+    max-height: 530px;
   }
 
   .img-bloc, .h1-bloc {
@@ -267,6 +321,7 @@ footer {
 
   .img-bloc {
     height: unset;
+    margin-right: 120px;
   }
 
   .img-profile {
@@ -282,41 +337,48 @@ footer {
   h1 {
     display: block;
     width: 300px;
+    padding: 20px;
+    line-height: 70px;
     text-align: left;
+  }
+
+  h2 {
+    font-size: $section-title-size-desktop
   }
 
   // Main
 
   main {
     flex-direction: row;
+    justify-content: center;
+    height: fit-content;
     grid-column: 4/7;
     width: 100%;
   }
 
+  section {
+    margin: unset;
+  }
+
   .experiences, .A-propos {
     height: 100vh;
-    margin-top: 60px;
     justify-content: flex-start;
-    max-width: 1000px;
-    width: 40%;
   }
 
   .experiences {
     padding: 0 0 117px;
-    margin-left: 130px;
-    margin-right: unset;
+    margin: unset;
+    margin-right: 50px;
+    height: unset;
+    max-width: 400px;
+  }
+
+  .A-propos {
+    max-width: 300px;
   }
 
   .experiences-bloc {
-    margin: 40px 0;
-  }
-
-  .competences-bloc {
-    display: flex;
-  }
-
-  .hard-skills {
-    width: 100%;
+    margin: 20px 0;
   }
 
   .skill {
