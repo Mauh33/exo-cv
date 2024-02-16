@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -64,7 +64,7 @@ h3 {
 }
 
 .experiences h2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .experiences-bloc {
@@ -76,6 +76,7 @@ h3 {
 
 .competences-bloc {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -167,7 +168,6 @@ main > * {
 section {
   width: 80%;
   position: relative;
-  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -183,8 +183,7 @@ section > * {
 
 .A-propos {
   width: 80%;
-  min-height: 700px;
-  height: 70vh;
+  margin-bottom: 60px;
 }
 
 footer {
@@ -247,15 +246,18 @@ footer {
     height: 100%;
   }
   .A-propos {
-    min-height: 600px;
-    max-height: 100vh;
+    justify-content: center;
+  }
+  .A-propos h2 {
+    margin-bottom: 20px;
+    align-self: center;
   }
   .a-propos-bloc {
     max-width: 450px;
     width: auto;
   }
   .experiences {
-    max-width: 350px;
+    max-width: 450px;
     width: 80%;
   }
   .competences-bloc {
@@ -277,8 +279,20 @@ footer {
   h2 {
     font-size: 40px;
   }
+  .A-propos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .A-propos h2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
   .A-propos p {
     line-height: 27px;
+  }
+  .competences-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .coordonnees ul {
     flex-direction: row;
@@ -347,7 +361,6 @@ footer {
     margin: unset;
   }
   .experiences, .A-propos {
-    height: 100vh;
     justify-content: flex-start;
   }
   .experiences {
