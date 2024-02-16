@@ -63,7 +63,7 @@ h3 {
   margin: 10px 0;
 }
 
-.experiences h2 {
+.experiences h2, .A-propos h2 {
   margin-bottom: 20px;
 }
 
@@ -186,6 +186,10 @@ section > * {
   margin-bottom: 60px;
 }
 
+.A-propos p {
+  text-align: justify;
+}
+
 footer {
   grid-column: 1/10;
   grid-row: 12/14;
@@ -209,7 +213,8 @@ footer {
 .coordonnees ul > * {
   margin: calc(0 / 2);
 }
-.coordonnees a, .coordonnees p {
+.coordonnees a,
+.coordonnees p {
   color: var(--footer-ft-color);
   font-weight: 600;
 }
@@ -300,7 +305,8 @@ footer {
     align-items: end;
     height: 70%;
   }
-  .coordonnees p, .coordonnees a {
+  .coordonnees p,
+  .coordonnees a {
     margin: 0 20px;
     font-size: 16px;
   }
@@ -322,7 +328,8 @@ footer {
     height: 60vh;
     max-height: 530px;
   }
-  .img-bloc, .h1-bloc {
+  .img-bloc,
+  .h1-bloc {
     width: unset;
     max-width: unset;
     max-height: unset;
@@ -360,18 +367,17 @@ footer {
   section {
     margin: unset;
   }
-  .experiences, .A-propos {
+  .experiences,
+  .A-propos {
     justify-content: flex-start;
   }
   .experiences {
-    padding: 0 0 117px;
-    margin: unset;
     margin-right: 50px;
-    height: unset;
     max-width: 400px;
   }
   .A-propos {
     max-width: 300px;
+    margin-bottom: unset;
   }
   .experiences-bloc {
     margin: 20px 0;

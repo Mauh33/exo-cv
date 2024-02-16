@@ -51,7 +51,7 @@ h3 {
   margin: 10px 0;
 }
 
-.experiences h2 {
+.experiences h2, .A-propos h2 {
   margin-bottom: 20px;
 }
 
@@ -77,11 +77,7 @@ h3 {
   margin: 10px 10px 10px 0;
   background-color: var(--secondary-color);
   border-radius: 14px;
-  @include flexbox(
-    $direction: row,
-    $justify: center,
-    $align: center
-  );
+  @include flexbox($direction: row, $justify: center, $align: center);
   width: fit-content;
 }
 
@@ -92,8 +88,6 @@ h3 {
   padding: 10px;
 }
 
-
-
 /*
   *
       Mobile part
@@ -103,33 +97,24 @@ h3 {
 // Header
 
 header {
-  grid-column:  1/10;
+  grid-column: 1/10;
   grid-row: 1/6;
 }
 
 .header-intro-bloc {
   position: relative;
-  @include flexbox(
-    $direction:column,
-    $justify: center,
-    $align: center,
-  )
+  @include flexbox($direction: column, $justify: center, $align: center);
 }
 
 .h1-bloc {
   width: 100%;
   height: 200px;
-  @include flexbox(
-    $direction: row,
-    $justify: center,
-    $align: center
-  )
+  @include flexbox($direction: row, $justify: center, $align: center);
 }
 
 .img-bloc {
   display: none;
 }
-
 
 // Main
 
@@ -141,7 +126,7 @@ main {
     $direction: column-reverse,
     $justify: space-evenly,
     $align: flex-start
-  )
+  );
 }
 
 section {
@@ -149,16 +134,16 @@ section {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  @include flexbox(
-    $direction: column,
-    $justify: space-evenly,
-    $align: start,
-  )
+  @include flexbox($direction: column, $justify: space-evenly, $align: start);
 }
 
 .A-propos {
   width: 80%;
   margin-bottom: 60px;
+}
+
+.A-propos p {
+  text-align: justify;
 }
 
 // Footer
@@ -179,11 +164,12 @@ footer {
     @include flexbox(
       $direction: column,
       $justify: space-evenly,
-      $align: center,
-    )
+      $align: center
+    );
   }
 
-  a, p {
+  a,
+  p {
     color: var(--footer-ft-color);
     font-weight: 600;
   }
@@ -227,8 +213,7 @@ footer {
     height: 100%;
   }
 
-
-// Main
+  // Main
 
   .A-propos {
     justify-content: center;
@@ -254,7 +239,6 @@ footer {
   }
 }
 
-
 /*
   *
       Big Tablet part
@@ -262,6 +246,7 @@ footer {
 */
 
 @include from(md) {
+  // Header
 
   .header-intro-bloc {
     flex-direction: row;
@@ -274,6 +259,8 @@ footer {
   h2 {
     font-size: $section-title-size-tablet;
   }
+
+  // Main
 
   .A-propos {
     flex-direction: row;
@@ -301,14 +288,13 @@ footer {
       align-items: end;
       height: 70%;
     }
-    p, a {
+    p,
+    a {
       margin: 0 20px;
       font-size: 16px;
     }
   }
-
 }
-
 
 /*
   *
@@ -317,7 +303,6 @@ footer {
 */
 
 @include from(lg) {
-
   // Header
 
   header {
@@ -333,7 +318,8 @@ footer {
     max-height: 530px;
   }
 
-  .img-bloc, .h1-bloc {
+  .img-bloc,
+  .h1-bloc {
     width: unset;
     max-width: unset;
     max-height: unset;
@@ -363,7 +349,7 @@ footer {
   }
 
   h2 {
-    font-size: $section-title-size-desktop
+    font-size: $section-title-size-desktop;
   }
 
   // Main
@@ -380,20 +366,19 @@ footer {
     margin: unset;
   }
 
-  .experiences, .A-propos {
+  .experiences,
+  .A-propos {
     justify-content: flex-start;
   }
 
   .experiences {
-    padding: 0 0 117px;
-    margin: unset;
     margin-right: 50px;
-    height: unset;
     max-width: 400px;
   }
 
   .A-propos {
     max-width: 300px;
+    margin-bottom: unset;
   }
 
   .experiences-bloc {
