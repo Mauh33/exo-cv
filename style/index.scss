@@ -221,7 +221,7 @@ footer {
 
   .A-propos h2 {
     margin-bottom: 20px;
-    align-self: center;
+    align-self: baseline;
   }
 
   .a-propos-bloc {
@@ -268,8 +268,7 @@ footer {
   }
 
   .A-propos h2 {
-    flex-basis: 100%;
-    text-align: center;
+    flex-basis: 450px;
   }
 
   .A-propos p {
