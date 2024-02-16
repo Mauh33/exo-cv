@@ -59,7 +59,7 @@ h3 {
   width: 100%;
   max-width: 350px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .competences-bloc {
@@ -146,7 +146,7 @@ main {
 section {
   width: 80%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   @include flexbox(
@@ -161,11 +161,6 @@ section {
   min-height: 700px;
   height: 70vh;
 }
-
-.experiences {
-  height: 70vh;
-}
-
 
 // Footer
 
@@ -249,7 +244,10 @@ footer {
   .experiences {
     max-width: 350px;
     width: 80%;
-    height: 80vh;
+  }
+
+  .competences-bloc {
+    justify-content: flex-start;
   }
 }
 
@@ -272,6 +270,10 @@ footer {
 
   h2 {
     font-size: $section-title-size-tablet;
+  }
+
+  .A-propos p {
+    line-height: 27px;
   }
 
   .coordonnees {
