@@ -166,12 +166,9 @@ section {
   margin-bottom: 60px;
 }
 
-.a-propos-bloc {
-  margin-bottom: 20px;
-}
-
 .A-propos p {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -238,7 +235,7 @@ footer {
     margin-bottom: 20px;
     align-self: baseline;
   }
-  .a-propos-bloc {
+  .A-propos p {
     max-width: 450px;
     width: auto;
   }
@@ -383,9 +380,6 @@ footer {
   }
   .A-propos h2 {
     margin-bottom: 40px;
-  }
-  .a-propos-bloc {
-    margin-bottom: 20px;
   }
   h3 {
     font-size: 28px;
