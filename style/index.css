@@ -78,8 +78,7 @@ h3 {
 
 .competences-bloc {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -170,7 +169,6 @@ section {
 
 .A-propos p {
   font-size: 16px;
-  text-align: justify;
 }
 
 footer {
