@@ -140,7 +140,7 @@ header {
 }
 
 main {
-  grid-column: 2/9;
+  grid-column: 1/10;
   grid-row: 6/11;
   margin: auto;
   display: flex;
