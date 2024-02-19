@@ -48,10 +48,12 @@ h3 {
 }
 
 .date {
+  font-size: 16px;
   margin: 10px 0;
 }
 
-.experiences h2, .A-propos h2 {
+.experiences h2,
+.A-propos h2 {
   margin-bottom: 20px;
 }
 
@@ -143,6 +145,7 @@ section {
 }
 
 .A-propos p {
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -211,6 +214,7 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: 177px;
   }
 
   // Main
@@ -312,46 +316,62 @@ footer {
   .header-intro-bloc {
     min-height: unset;
     align-items: flex-end;
-    justify-content: center;
-    height: 60vh;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 65vh;
     max-height: 530px;
   }
 
   .img-bloc,
   .h1-bloc {
-    width: unset;
     max-width: unset;
     max-height: unset;
   }
 
   .img-bloc {
-    height: unset;
-    margin-right: 120px;
+    position: relative;
+    display: flex;
+    flex-basis: 45%;
+    padding-right: 30px;
+    justify-content: flex-end;
   }
 
+  .img-bloc,
   .img-profile {
     width: 309px;
     height: 391px;
   }
 
+  .img-profile {
+    position: absolute;
+    top: 0;
+  }
+
   .h1-bloc {
-    max-height: 300px;
+    width: unset;
+    height: unset;
     margin-bottom: 40px;
+    flex-basis: 50%;
+    justify-content: flex-start;
   }
 
   h1 {
     display: block;
-    width: 300px;
-    padding: 20px;
-    line-height: 70px;
+    font-size: $h1-size-desktop;
+    max-width: 500px;
+    max-height: 350px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 40px;
+    line-height: 110px;
     text-align: left;
   }
+
+  // Main
 
   h2 {
     font-size: $section-title-size-desktop;
   }
-
-  // Main
 
   main {
     flex-direction: row;
@@ -371,12 +391,12 @@ footer {
   }
 
   .experiences {
-    margin-right: 50px;
+    margin-right: 30px;
     max-width: 400px;
   }
 
   .A-propos {
-    max-width: 300px;
+    max-width: 381px;
     margin-bottom: unset;
   }
 
@@ -394,5 +414,9 @@ footer {
 
   .a-propos-bloc {
     margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 28px;
   }
 }

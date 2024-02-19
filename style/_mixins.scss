@@ -46,24 +46,6 @@
   flex-wrap: $wrap;
   justify-content: $justify;
   align-items: $align;
-
-  @if $gap {
-    margin: calc(#{-$gap} / 2);
-
-    & > * {
-      margin: calc(#{$gap} / 2);
-    }
-  }
-
-  @if $child-placeholder !=null {
-    @if $child-placeholder==small {
-      @extend %flex-child-small;
-    } @else if $child-placeholder==medium {
-      @extend %flex-child-medium;
-    } @else if $child-placeholder==large {
-      @extend %flex-child-large;
-    }
-  }
 }
 
 @mixin from($media) {
